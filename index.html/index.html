@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAGV Digitals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">KAGV Digitals</div>
+        <input type="text" placeholder="Search for products, services...">
+        <div class="nav-buttons">
+            <button onclick="alert('Cart clicked')">Cart</button>
+            <button onclick="location.href='admin.html'">Admin Login</button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to KAGV Digitals</h1>
+            <p>Your one-stop solution for digital products and services.</p>
+            <button onclick="alert('Explore Products')">Explore Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://via.placeholder.com/500x300" alt="Digital Services">
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <h2>Featured Products & Services</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Website Design">
+                <h3>Website Design</h3>
+                <p>Starting at ₹5000</p>
+                <button onclick="buyProduct('Website Design')">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="SEO Services">
+                <h3>SEO Services</h3>
+                <p>Starting at ₹3000</p>
+                <button onclick="buyProduct('SEO Services')">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Digital Marketing">
+                <h3>Digital Marketing</h3>
+                <p>Starting at ₹4000</p>
+                <button onclick="buyProduct('Digital Marketing')">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Graphic Design">
+                <h3>Graphic Design</h3>
+                <p>Starting at ₹2000</p>
+                <button onclick="buyProduct('Graphic Design')">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-list">
+            <div class="category">Web Design</div>
+            <div class="category">SEO</div>
+            <div class="category">Marketing</div>
+            <div class="category">Graphics</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 KAGV Digitals. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
