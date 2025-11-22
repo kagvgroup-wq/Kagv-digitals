@@ -16,8 +16,8 @@
             <input type="text" placeholder="Search for products, brands and more">
         </div>
 
-        <button class="login-btn">Login</button>
-        <div class="cart">🛒 Cart (0)</div>
+        <div class="login-btn">Login</div>
+        <div class="cart">🛒 Cart</div>
         <button id="dark-mode-toggle">🌙</button>
     </div>
 
@@ -27,7 +27,6 @@
     <!-- Products -->
     <div class="products-container">
         <h2 class="products-title">Best Deals</h2>
-
         <div class="products">
 
             <div class="product" data-id="1" data-name="Product 1" data-price="1499">
@@ -45,7 +44,7 @@
             </div>
 
             <div class="product" data-id="3" data-name="Product 3" data-price="899">
-                <img src="https://scontent.fdel5-3.fna.fbcdn.net/v/t1.15752-9/582522920_1562963161383592_8269907309776511828_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=hJSlRiyBN8kQ7kNvwFCh97r&_nc_oc=AdlMOPqr9Z-_Ku2-CRGAyKqgx0SfA-JKFd1yUqJ--GXXfnSMaYkj-A_5wkWMwswtyRI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fdel5-3.fna&oh=03_Q7cD3wHaMFuudQkuxvwFiytzaScar_q6uU8j-exFKJyAcX_IbQ&oe=6948493F" alt="Qr code">
+                <img src="https://scontent.fdel5-3.fna.fbcdn.net/v/t1.15752-9/582522920_1562963161383592_8269907309776511828_n.jpg" alt="Qr code">
                 <h3>Product 3</h3>
                 <p>₹899</p>
                 <button class="add-btn">Add to Cart</button>
@@ -55,47 +54,44 @@
     </div>
 
     <!-- Cart Popup -->
-    <div class="cart-popup" id="cart-popup">
+    <div id="cart-popup" class="cart-popup">
         <h2>Your Cart</h2>
         <div id="cart-items"></div>
-        <div class="cart-total">Total: ₹<span id="cart-total">0</span></div>
+        <div>Total: ₹<span id="cart-total">0</span></div>
         <button id="close-cart">Close</button>
     </div>
 
     <!-- Login Popup -->
-    <!-- Login Popup -->
-<div class="login-popup" id="login-popup">
-    <h2>Login</h2>
+    <div class="login-popup" id="login-popup">
+        <h2>Login</h2>
 
-    <select id="login-method">
-        <option value="username">Username</option>
-        <option value="email">Email</option>
-        <option value="mobile">Mobile OTP</option>
-    </select>
+        <select id="login-method">
+            <option value="username">Username</option>
+            <option value="email">Email</option>
+            <option value="mobile">Mobile OTP</option>
+        </select>
 
-    <!-- Username/Password -->
-    <div class="login-fields" id="username-fields">
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="userpass" placeholder="Password">
-        <button id="login-username">Login</button>
+        <div class="login-fields" id="username-fields">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="userpass" placeholder="Password">
+            <button class="login-btn-submit">Login</button>
+        </div>
+
+        <div class="login-fields" id="email-fields" style="display:none;">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="emailpass" placeholder="Password">
+            <button class="login-btn-submit">Login</button>
+        </div>
+
+        <div class="login-fields" id="mobile-fields" style="display:none;">
+            <input type="text" id="mobile" placeholder="Mobile Number">
+            <input type="text" id="otp" placeholder="OTP">
+            <button class="login-btn-submit">Login</button>
+        </div>
+
+        <button id="close-login">Close</button>
     </div>
 
-    <!-- Email/Password -->
-    <div class="login-fields" id="email-fields" style="display:none;">
-        <input type="email" id="email" placeholder="Email">
-        <input type="password" id="emailpass" placeholder="Password">
-        <button id="login-email">Login</button>
-    </div>
-
-    <!-- Mobile/OTP -->
-    <div class="login-fields" id="mobile-fields" style="display:none;">
-        <input type="text" id="mobile" placeholder="Mobile Number">
-        <input type="text" id="otp" placeholder="OTP">
-        <button id="login-otp">Login</button>
-    </div>
-
-    <button id="close-login">Close</button>
-</div>
-    <script src ="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
